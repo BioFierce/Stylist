@@ -112,7 +112,7 @@ extension View {
             view.backgroundColor = UIColor(patternImage: value.value)
         }
 
-        add("contentMode") { (view: UIView, value: PropertyValue<UIViewContentMode>) in
+        add("contentMode") { (view: UIView, value: PropertyValue<UIView.ContentMode>) in
             view.contentMode = value.value
         }
 
@@ -413,7 +413,7 @@ extension View {
             view.barStyle = value.value
         }
 
-        add("itemPositioning") { (view: UITabBar, value: PropertyValue<UITabBarItemPositioning>) in
+        add("itemPositioning") { (view: UITabBar, value: PropertyValue<UITabBar.ItemPositioning>) in
             view.itemPositioning = value.value
         }
 
@@ -434,15 +434,15 @@ extension View {
             view.spacing = value.value
         }
 
-        add("alignment") { (view: UIStackView, value: PropertyValue<UIStackViewAlignment>) in
+        add("alignment") { (view: UIStackView, value: PropertyValue<UIStackView.Alignment>) in
             view.alignment = value.value
         }
 
-        add("distribution") { (view: UIStackView, value: PropertyValue<UIStackViewDistribution>) in
+        add("distribution") { (view: UIStackView, value: PropertyValue<UIStackView.Distribution>) in
             view.distribution = value.value
         }
         
-        add("axis") { (view: UIStackView, value: PropertyValue<UILayoutConstraintAxis>) in
+        add("axis") { (view: UIStackView, value: PropertyValue<NSLayoutConstraint.Axis>) in
             view.axis = value.value
         }
 
